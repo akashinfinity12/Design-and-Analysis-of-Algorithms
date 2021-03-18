@@ -13,18 +13,18 @@ void max_min(int i,int j)
     else 
     {
         if(i==j-1)
-    {
-        if(a[i]<a[j])
         {
-            max=a[j];
-            min=a[i];
+            if(a[i]<a[j])
+            {
+                max=a[j];
+                min=a[i];
+            }
+            else
+            {
+                max=a[i];
+                min=a[j];
+            }
         }
-        else
-        {
-            max=a[i];
-            min=a[j];
-        }
-    }
         else
         {
             mid=(i+j)/2;
@@ -33,13 +33,15 @@ void max_min(int i,int j)
             min1 = min;
             max_min(mid+1,j);
             if(max<max1)
-                max=max1;
-                
+            {
+                max=max1;        
+            }
             if(min>min1)
+            {
                 min=min1;
-                
+            }         
+        }
     }
-}
 calls++;
 printf("\nPASS\n");
 printf("MAX=%d MIN=%d\n",max,min);
