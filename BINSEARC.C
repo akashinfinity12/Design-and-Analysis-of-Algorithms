@@ -25,23 +25,23 @@ void binarySearch(int a[], int p, int r, int x)
 	calls++;
 	if(p<=r)
 	{
-	int mid=(p+r)/2;
-	if(x==a[mid])
-	{
-		printf("%d\n",mid);
-		printf("Number of calls : %d\n",calls);
-	}
-	else if(x>a[mid])
-	{
-		binarySearch(a,mid+1,r,x);
-	}
-	else if(x<a[mid])
-	{
-		binarySearch(a,p,mid-1,x);
-	}
-	else
-	{
-		printf("\nElement not found");
-	}
+		int mid=(p+r)/2;
+		if(x==a[mid])
+		{
+			printf("%d\n",mid);
+			printf("Number of calls : %d\n",calls);
+		}
+		else if(x>a[mid])
+		{
+			binarySearch(a,mid+1,r,x);
+		}
+		else if(x<a[mid])
+		{
+			binarySearch(a,p,mid-1,x);
+		}
+		else
+		{
+			printf("\nElement not found");
+		}
 	}
 }
