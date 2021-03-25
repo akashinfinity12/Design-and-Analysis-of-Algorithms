@@ -9,7 +9,7 @@ void main()
 	int n,G[MAX][MAX],i,j,e=0,E[MAX][2];
 	printf("Enter the number of vertices : ");
 	scanf("%d",&n);
-	printf("\nEnter the adjacency matrix\n");
+	printf("\nEnter the graph matrix\n");
 	for(i=0;i<n;++i)
 	{
 		for(j=0;j<n;++j)
