@@ -9,7 +9,7 @@ void main()
 	int n,start,g[MAX][MAX];
 	printf("Enter the number of nodes : ");
 	scanf("%d",&n);
-	printf("\nEnter the adjacency matrix\n");
+	printf("\nEnter the graph matrix\n");
 	for(int i=0;i<n;++i)
 	{
 		for(int j=0;j<n;++j)
