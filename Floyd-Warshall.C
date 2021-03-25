@@ -10,7 +10,7 @@ int main()
     int i,j,n;
     printf("Enter the number of vertices : ");
     scanf("%d",&n);
-    printf("Enter the adjacency matrix\n");
+    printf("Enter the graph matrix\n");
     for (i=0;i<n;++i)
     {
         for (j=0;j<n;++j)
