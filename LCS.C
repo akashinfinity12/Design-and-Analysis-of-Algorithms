@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<string.h>
 #define MAX 20
 int x[MAX][MAX], y[MAX][MAX];
